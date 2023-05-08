@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #181717;
+  color: black;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+#container {
+  width: 550px;
+  height: 730px;
+
+  border: 1px solid black;
+
+  margin: 110px auto;
+  background-color: white;
+}
+
+#enter-value-div {
+  /* justify-content: space-evenly; */
+  height: 40%;
+  padding: 20px;  
+  background-color: #6942fe;
+  color: white;
+}
+
+#title {
+  font-size: 26px;
+  font-weight: bold;
+  padding: 2px;
+  margin: 10px auto 15px auto;
+}
+
+#input-box {
+  border: 1px solid white;
+  background-color: #6942fe;
+  
+  font-size: 36px;
+  font-weight: bold;
+
+  padding: 5px;
+  margin: 10px auto;
+  width: 90px;
+  text-align: center;
+  border-radius: 7px;
+
+  color: white;
+}
+
+#convert-btn {
+  height: 35px;
+  width: 20%;
+
+  margin: 15px auto 0 auto;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+#result-div {
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  background-color: #badace;
+  /* background-color: whitesmoke; */
+}
+
+.result-divs {
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 25%;
+  /* border: 1px solid black; */
+  width: 90%;
+  background-color: white;
+}
+
+.result-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(60, 122, 183);
+}
+
+.small-text {
+  font-size: 14px;
+}
