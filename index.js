@@ -55,7 +55,7 @@ function convertVolume(a) {
   vol2 = (a * 3.788).toFixed(2);
   
   volume1.textContent = `${a} liters = ${vol1} gallons`;
-  volume1.textContent = `${a} gallons = ${vol2} liters`;
+  volume2.textContent = `${a} gallons = ${vol2} liters`;
 }
 
 function convertMass(a) {
