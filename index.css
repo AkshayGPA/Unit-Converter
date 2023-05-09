@@ -18,9 +18,7 @@ body {
 #container {
   width: 550px;
   height: 730px;
-
   /* border: 1px solid black; */
-  
   margin: 110px auto;
   background-color: rgb(0, 0, 0);
 }
@@ -41,6 +39,29 @@ body {
   margin: 10px auto 15px auto;
 }
 
+#sub-text {
+  margin: 0 auto;
+}
+
+/* 
+To remove the arrow indicators displayed for an input of type number
+
+Resource:
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hide_arrow_number
+*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 #input-box {
   border: 1px solid white;
   background-color: #6942fe;
@@ -50,7 +71,8 @@ body {
 
   padding: 5px;
   margin: 10px auto;
-  width: 90px;
+  /* width: 90px; */
+  max-width: 120px;
   text-align: center;
   border-radius: 7px;
 
@@ -61,7 +83,7 @@ body {
   height: 35px;
   width: 20%;
 
-  margin: 15px auto 0 auto;
+  margin: 25px auto 0 auto;
   border: none;
   border-radius: 5px;
   padding: 5px;

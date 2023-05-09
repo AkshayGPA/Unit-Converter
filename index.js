@@ -23,11 +23,20 @@ const mass2 = document.getElementById("pound-kilo");
 
 convertBtn.addEventListener ("click", function() {
   let number = inputNum.value;
-  number = Number(number);
+  // number = Number(number);
   
+  if (number > 99999) {
+    alert("Please enter a value below 99,999");
+    inputNum.value = null;
+    return;
+  }
+
   convertLength(number);
   convertVolume(number);
   convertMass(number);
+
+  // To clear out the input field after converting and displaying the results.
+  inputNum.value = null;
 })
 
 convertBtn.addEventListener('keydown', function(e) {
